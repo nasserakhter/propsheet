@@ -1,0 +1,51 @@
+// Comment
+// @ is metadata
+// ! is for creating subsections
+// | is used to separate name and values
+// ^ is the injection operator. anything in 
+//   between these symbols will be processed
+//   first then injected into the parent object
+// ~ is the reference operator. anything name
+//   with this in front of it will be used as a 
+//   reference. note: forward referencing is 
+//   supported but NOT recommended.
+
+// propsheet natively supports referencing
+
+@propsheet v1.0
+
+
+!project
+
+name        | Microart Hugo
+version     | 1.0
+developer   | Microart Inc.
+publisher   | Microart Inc.
+refval      | something
+url         | https://www.microart.app/Hugo
+repo        | https://grendel.microart.app/hugo-dove-desktop
+description | Descriptions can be one line\nBut they can also be multilined
+description | ^
+  The injection operator can be used to inject
+  multiline strings into a single field.
+^
+
+
+!packages
+
+| microart.delv
+| system.app
+| system.gui
+| system.binary
+
+
+!objectInObject
+
+thisIsAnObject | ^
+  fieldOne   | hehe
+  fieldTwo   | haha
+  fieldThree | hehehaha
+^
+
+// in json format this will be
+// objectInObject.thisIsAnObject.fieldOne = hehe

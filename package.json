@@ -1,0 +1,8 @@
+{
+  "name": "propsheet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nasserakhter/propsheet",
+  "author": "microart-inc <nasrj3@gmail.com>",
+  "license": "MIT"
+}
