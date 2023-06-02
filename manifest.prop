@@ -24,7 +24,6 @@ publisher   | Microart Inc.
 refval      | something
 url         | https://www.microart.app/Hugo
 repo        | https://grendel.microart.app/hugo-dove-desktop
-description | Descriptions can be one line\nBut they can also be multilined
 description | ^
   The injection operator can be used to inject
   multiline strings into a single field.
@@ -37,15 +36,3 @@ description | ^
 | system.app
 | system.gui
 | system.binary
-
-
-!objectInObject
-
-thisIsAnObject | ^
-  fieldOne   | hehe
-  fieldTwo   | haha
-  fieldThree | hehehaha
-^
-
-// in json format this will be
-// objectInObject.thisIsAnObject.fieldOne = hehe
